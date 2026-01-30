@@ -1,0 +1,16 @@
+name: napari_bigwarp
+display_name: BigWarp
+visibility: public
+icon: ""
+categories: []
+
+contributions:
+  commands:
+    - id: napari_bigwarp.make_bigwarp_widget
+      python_name: napari_bigwarp._bigwarp_widget:BigWarpQWidget
+      title: BigWarp Registration
+
+  widgets:
+    - command: napari_bigwarp.make_bigwarp_widget
+      display_name: BigWarp
+      autogenerate: false
